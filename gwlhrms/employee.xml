@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <record model="ir.ui.view" id="gwl_hrms">
+        <field name="name">gwl.employee.form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form" />
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <field name="address_id" position="after">
+                <field name="office_address"/>
+                <field name="skype_id"/>
+                <field name="blood_group"/>
+            </field>
+            <field name="parent_id" position="attributes">
+				<attribute name="string">Supervisor</attribute>
+			</field>
+			<field name="coach_id" position="attributes">
+				<attribute name="invisible">True</attribute>
+			</field>
+			<field name="bank_account_id" position="after">
+                <field name="doj"/>
+                <field name="address_proof"/>
+                <field name="address_proof_doc"/>
+                <field name="id_proof"/>
+                <field name="id_proof_doc"/>
+            </field>
+            <field name="address_home_id" position="attributes">
+				<attribute name="string">Permanent Address</attribute>
+			</field>
+			<field name="active" position="after">
+				<field name="total_hr"/>
+                <field name="punch_card"/>
+            </field>
+        </field>
+    </record>
+  </data>
+</openerp>
