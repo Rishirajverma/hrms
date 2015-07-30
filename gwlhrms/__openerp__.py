@@ -3,7 +3,7 @@
     'version': "1.0",
     'author': "Rishiraj verma",
     'description': "This module is for customizing the default HR-Employee  functionalities",
-    'website':"http://www.galaxyweblinks.com/",
+    'website':"",
     'category': "Human Resource",
     'depends': ['hr'],
     'data': ['employee.xml'],
